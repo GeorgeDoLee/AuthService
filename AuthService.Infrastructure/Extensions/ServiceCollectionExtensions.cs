@@ -1,5 +1,6 @@
 ﻿using AuthService.Domain.Entities;
 using AuthService.Infrastructure.Persistance;
+using AuthService.Infrastructure.Seeders;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -14,5 +15,7 @@ public static class ServiceCollectionExtensions
         services.AddDbContext<AuthDbContext>(options =>
             options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"))
         );
+
+        services.AddTransient<ISeeder, Seeder>();
     }
 }
