@@ -1,4 +1,4 @@
-﻿using AuthService.Application.Models;
+﻿using AuthService.Application.Models.Requests;
 using AuthService.Domain.Constants;
 using AuthService.Domain.Entities;
 using Microsoft.AspNetCore.Identity;

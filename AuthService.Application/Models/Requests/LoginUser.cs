@@ -1,4 +1,4 @@
-﻿namespace AuthService.Application.Models;
+﻿namespace AuthService.Application.Models.Requests;
 
 public class LoginUser
 {
